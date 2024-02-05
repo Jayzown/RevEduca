@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Entity
+@Entity(name = "students")
 public class Student {
     @Id@GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer studentId;
